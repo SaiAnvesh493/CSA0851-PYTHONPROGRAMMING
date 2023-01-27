@@ -1,0 +1,14 @@
+def removecommonwords(str1,str2):
+    count=[]
+    str1=list(str1.split(" "))
+    str2=list(str2.split(" "))
+    for i in str1:
+        if i in str2:
+            str1.remove(i)
+            str2.remove(i)
+    print(*str1)
+    print(*str2)
+str3=input("Enter the String:")
+str4=input("Enter the String:")
+removecommonwords(str3,str4)
+
